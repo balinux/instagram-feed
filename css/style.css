@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+*:before, *:after {
+  box-sizing: border-box;
+}
+
+.content {
+  max-width: 480px;
+  text-align: center;
+  margin: 2em auto;
+}
+@media all and (min-width: 840px) {
+  .content {
+    max-width: 720px;
+  }
+}
+
+.instagram .media {
+  padding: 4px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin: 5%;
+  position: relative;
+}
+@media all and (min-width: 480px) {
+  .instagram .media {
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+  }
+}
+@media all and (min-width: 840px) {
+  .instagram .media {
+    width: 28.3334%;
+    margin: 2.5%;
+  }
+}
+.instagram .media.video a:before, .instagram .media.video a:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+}
+.instagram .media.video a:before {
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #fff;
+  border-radius: 24px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  margin-top: -24px;
+  margin-left: -24px;
+}
+.instagram .media.video a:after {
+  width: 16px;
+  height: 12px;
+  border: 12px solid transparent;
+  border-left-width: 18px;
+  border-left-color: #fff;
+  margin-top: -12px;
+  margin-left: -5px;
+}
+.instagram .media img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.instagram .media .user {
+  width: 48px;
+  height: 48px;
+  padding: 2px;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.load-more {
+  font-size: 1.4rem;
+  line-height: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 24px;
+  background: #ff6514;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
